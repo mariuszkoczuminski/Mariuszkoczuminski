@@ -1,10 +1,10 @@
 import json
 import time
 
-# Ścieżka dostępu do pliku (może to być ścieżka względna lub bezwzględna)
+# Ścieżka dostępu do pliku 
 sciezka = r"C:\Users\Kmari\Desktop\imiona.json"
 
-# otwieranie pliku imiona.json
+
 with open(sciezka, "r") as file:
     data = json.load(file)
 
@@ -13,7 +13,7 @@ nowa_lista = list()
 for w in data['data']:
     nowa_lista.append(w[11])
 
-# podanie imienia i wyszukiwanie 
+# podawanie imienia i pomiar czasu wyszukiwania
 poziom = 0
 szukane_imie = input("Podaj szukane imie:")
 start = time.time()
