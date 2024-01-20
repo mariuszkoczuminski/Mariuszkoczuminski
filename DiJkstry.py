@@ -2,7 +2,7 @@
 import heapq
 
 def dij(graph, start):
-    # Inicjalizacja odległości i kolejki priorytetowej
+    # Inicjalizacjemy odleglość i kolejki
     odleglosci = {wierzcholek: float('infinity') for wierzcholek in graph}
     odleglosci[start] = 0
     kolejka_priorytetowa = [(0, start)]
@@ -25,7 +25,7 @@ def dij(graph, start):
 
     return odleglosci
 
-# Przykładowe użycie:
+
 graf = {
     'A': {'B': 4, 'C': 2},
     'B': {'C': 3, 'E': 3, 'D': 2,'A': 100},
